@@ -7,31 +7,43 @@
 
 body {
     background-color: transparent;
+
 }
 
-.yellow_background{
-    margin-top: 0px;
-    margin-right: 0px;
+.yellow_background {
+    /* top: 0px;
+    right: 0px; */
     background-color: #f2c94c;
     height: 500px;
-    z-index: -1;
-    width: 400px;
-    position: relative;
+    width: 520px;
+    margin-left: 740px;
+    position: absolute;
 }
-.container{
+
+.container {
     max-width: 1200px;
     width: 100%;
     margin: auto;
     padding: 50px;
+    position: relative;
 }
+
+/* Combined Navbar + Hero wrapper */
+.hero-section {
+    background-color: transparent;
+    z-index: 10;
+    margin-top: 0px;
+    
+}
+
 /* Navbar */
 .navbar {
     z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 80px;
-    background: white;
+    padding-bottom: 20px;
+    background: transparent;
 }
 
 .logo {
@@ -81,9 +93,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 50px;
     height: 450px;
-    z-index: 20;
+
 }
 
 
@@ -123,25 +134,19 @@ body {
 /* Right Side */
 .hero-right {
     width: 50%;
-    height: 400px;
+    height: 500px;
     position: relative;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
+    align-items: center;
 }
 
-.image-box {
-    z-index: 9px;
-    /* background-color: #f2c94c; */
-    padding: 40px;
-    position: absolute;
-}
+
 
 .image-box img {
+    margin-right: 120px;
     width: 350px;
-    height: 300px;
-   
-    margin-top: 100px;
-    padding-top: 120px;
+    height: 350px;
     border-radius: 6px;
 }
 
@@ -179,7 +184,7 @@ body {
 /* Bottom Image */
 .img-btm {
     position: relative;
-   
+
     width: 420px;
     height: 500px;
     border-radius: 6px;
@@ -258,6 +263,9 @@ body {
     text-align: left;
 }
 
+.grid_right_1 img {
+   padding: 4px;
+}
 
 
 /* healyourself */
@@ -281,7 +289,7 @@ body {
     height: 600px;
     width: 700px;
     object-fit: cover;
-    display: block;
+    /* display: block; */
 
 }
 
@@ -370,9 +378,9 @@ body {
     width: 200px;
 }
 
-.card_body a {
+/* .card_body a {
     padding-bottom: auto;
-}
+} */
 
 /* FAQS */
 
@@ -532,7 +540,7 @@ body {
     display: flex;
     gap: 20px;
     align-items: center;
-    
+
 }
 
 .article_small img {
@@ -547,7 +555,7 @@ body {
 }
 
 .article_small p {
-    width: full     ;
+    width: full;
     font-size: 14px;
     color: #666;
 }
@@ -559,8 +567,8 @@ body {
 
 
 /* Testimonial Pge*/
-.testimonial{
-    background-color:  #FCFBF7;
+.testimonial {
+    background-color: #FCFBF7;
     padding: 80px 80px;
 }
 
@@ -568,7 +576,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .testimonial_title p {
@@ -597,7 +605,7 @@ body {
 
 
 
-.testimonial_grid{
+.testimonial_grid {
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 40px;
@@ -608,7 +616,7 @@ body {
     display: flex;
     gap: 20px;
     /* align-items: center; */
-    
+
 }
 
 .testimonial_small img {
@@ -632,32 +640,32 @@ body {
 
 
 /* Contact Page */
-.contact{
+.contact {
     height: 400px;
     display: flex;
-   padding-top: 20px;
+    padding-top: 20px;
     background: #FCFBF7;
 
-    
+
 
 }
 
-.contact_section{
-    
+.contact_section {
+
     width: 50%;
     padding-left: 150px;
-    
+
 }
 
-.contact_info{
-    
+.contact_info {
+
     margin-top: 40px;
     display: flex;
-   
+
 }
 
 
-.contact_info h4{
+.contact_info h4 {
     font-weight: 300;
     padding-left: 10px;
 }
@@ -666,7 +674,8 @@ body {
     
 } */
 
-.form_fields input,textarea{
+.form_fields input,
+textarea {
     border: 1px solid black;
     padding-left: 10px;
     border-radius: 8px;
@@ -675,7 +684,7 @@ body {
     width: 400px;
 }
 
-.btn-sendmsg{
+.btn-sendmsg {
     margin-top: 20px;
     height: 50px;
     width: 120px;
@@ -686,26 +695,26 @@ body {
 }
 
 
-.footer{
+.footer {
     background-color: #0D0E0F;
     margin-top: 5px;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.footer img{
+.footer img {
     height: 35px;
     width: 35px;
     margin-top: 21px;
     border-radius: 50%;
     margin-left: 15px;
-    
+
 }
 
-.footer_info{
+.footer_info {
     color: white;
     padding-bottom: 20px;
 }
@@ -720,6 +729,10 @@ body {
 
     .navbar {
         padding: 20px 30px;
+    }
+
+    .yellow_background {
+        display: none;
     }
 
     .hero {
@@ -750,17 +763,16 @@ body {
 
     .aboutus_info,
     .ourmission_info,
-    .contact_section
-     {
+    .contact_section {
         width: 100%;
         margin-left: 0;
         padding: 20px 20px;
 
     }
 
-   
-   
-    
+
+
+
 
     .img-collection {
         width: 100%;
@@ -799,8 +811,7 @@ body {
     }
 
     .faq_info,
-    .healyourself_info
-    {
+    .healyourself_info {
         position: relative;
         width: full;
         left: 0;
@@ -808,7 +819,7 @@ body {
         top: 0;
     }
 
-    .healyourself_info .heal_border{
+    .healyourself_info .heal_border {
         width: 90%;
         margin-right: 10px;
         padding-right: 10px;
@@ -818,7 +829,7 @@ body {
     .healimg {
         margin-top: 150px;
         position: relative;
-        padding:5px 5px;
+        padding: 5px 5px;
         width: full;
 
     }
@@ -834,7 +845,7 @@ body {
         width: 100%;
     }
 
-    .footer{
+    .footer {
         font-size: small;
         justify-content: center;
         align-items: center;
@@ -843,12 +854,14 @@ body {
 
 
 
-/*        MOBILE VIEW            */
+/*   ------------------------------MOBILE VIEW ----------------------------------------           */
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 
-    .nav-links {
-        display: none; /* simple hide menu */
+    .nav-links,
+    .yellow_background {
+        display: none;
+        /* simple hide menu */
     }
 
     .btn-signup {
@@ -870,14 +883,21 @@ body {
         width: 100%;
     }
 
-    .article_small {
+    .heal_yourself{
+        height: auto;
+    }
+
+    .healyourself_info{
+        height: 500px;
+    }
+    
+    .article_small,
+    .healimg ,
+    .testimonial_small{
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .testimonial_small {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  
 
 }
