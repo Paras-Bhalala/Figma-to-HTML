@@ -291,7 +291,7 @@ body {
 
 /* ------------------------------------ HEAL YOURSELF ------------------------ */
 .heal_yourself {
-  margin-top: 20px;
+  margin-top: 70px;
   position: relative;
   height: 600px;
   overflow: hidden;
@@ -305,7 +305,7 @@ body {
   right: 0;
   height: 70px;
   width: 70px;
-  z-index: 2;
+  z-index: 100;
 }
 
 .heal_yourself .healgreenstar {
@@ -322,6 +322,7 @@ body {
   right: 0;
   top: 0;
   height: 100%;
+  z-index: 1212;
 }
 
 .healimg img {
@@ -387,13 +388,16 @@ body {
 /* ------------------------ BLOG ---------------------------- */
 .blog {
   position: relative;
-  padding-bottom: 316px;
+  margin-top: 50px;
+  
+  padding-bottom: 200px;
   overflow: hidden;
 }
 
 .green-bg {
   background-color: #00715d;
   color: white;
+  height: 350px;
   padding: 40px 80px 30px;
 }
 
@@ -481,11 +485,11 @@ body {
   margin-top: 8px;
 }
 
-/* --- FAQ --- */
+/* ----------------------------- FAQ ----------------------------- */
 .faq {
   position: relative;
   min-height: 560px;
-  margin-top: 60px;
+  /* margin-top: 30px; */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -498,7 +502,7 @@ body {
   height: 100%;
 }
 
-.faqimg > img {
+.faqimg img {
   height: 100%;
   width: 520px;
   object-fit: cover;
@@ -589,8 +593,8 @@ body {
 
 .article .articlestar {
   position: absolute;
-  right: 80px;
-  bottom: 80px;
+  right: -29px;
+  bottom: 268px;
 }
 
 .articlestar img {
@@ -717,7 +721,7 @@ body {
 
 .testimonial_title .testgreenstrip {
   position: absolute;
-  left: 487px;
+  left: 590px;
   top: 8px;
 }
 
@@ -912,88 +916,8 @@ body {
   text-align: center;
 }
 
-/* =============================================
-   LAPTOP  (screens up to 1100px)
-   
-   ============================================= */
-@media (max-width: 1100px) {
-  .main_container {
-    padding: 10px 30px;
-  }
 
-  .hero-left h1 {
-    font-size: 34px;
-  }
-
-  .about_us {
-    padding: 60px 60px;
-  }
-  .img-collection {
-    width: 360px;
-    height: 400px;
-  }
-  .img-top {
-    width: 170px;
-    height: 270px;
-  }
-  .img-btm {
-    width: 250px;
-    height: 290px;
-  }
-  .aboutus_info h1 {
-    font-size: 34px;
-  }
-
-  .our_mission {
-    padding: 60px 60px;
-  }
-  .ourmission_info h1 {
-    font-size: 34px;
-  }
-
-  .healimg > img {
-    width: 500px;
-  }
-  .healyourself_info {
-    width: 440px;
-  }
-
-  .green-bg {
-    padding: 40px 60px 30px;
-  }
-  .cards {
-    left: 60px;
-    gap: 24px;
-  }
-  .card_body {
-    width: 210px;
-  }
-
-  .faqimg > img {
-    width: 440px;
-  }
-  .faq_info {
-    margin-left: 400px;
-    width: 500px;
-  }
-
-  .article {
-    padding: 60px 60px;
-  }
-
-  .testimonial {
-    padding: 60px 60px;
-  }
-
-  .contact {
-    padding: 60px 60px;
-  }
-}
-
-/* =============================================
-   TABLET  (screens up to 768px)
-   Everything stacks into one column
-   ============================================= */
+/* TABLET  one column =========== */
 @media (max-width: 768px) {
   /* hide nav links */
   .nav-links {
@@ -1122,8 +1046,10 @@ body {
   .cards {
     position: relative;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     left: auto;
-    top: auto;
+    top: 10px;
     gap: 20px;
     padding: 24px 30px 30px;
     background: #f4f4f4;
@@ -1146,7 +1072,7 @@ body {
     height: auto;
     width: 100%;
   }
-  .faqimg > img {
+  .faqimg img {
     width: 100%;
     height: 240px;
   }
@@ -1154,7 +1080,8 @@ body {
     position: relative;
     margin-left: 0;
     width: 100%;
-    margin-top: 24px;
+    margin-top: 230px;
+    justify-content: center;
   }
 
   /* ARTICLE — single column */
@@ -1176,7 +1103,7 @@ body {
   }
   .article_small img {
     width: 100%;
-    height: 180px;
+    height: 280px;
   }
 
   /* TESTIMONIAL — single column */
@@ -1197,7 +1124,7 @@ body {
   }
   .testimonial_small > img {
     width: 100%;
-    height: 200px;
+    height: 400px;
   }
   .small_testinfo {
     padding: 14px;
@@ -1214,103 +1141,5 @@ body {
   }
   .contact_section h1 {
     font-size: 26px;
-  }
-}
-
-/* =============================================
-   MOBILE  (screens up to 480px)
-  s
-   ============================================= */
-@media (max-width: 480px) {
-  .main_container {
-    padding: 10px 16px;
-  }
-
-  .hero-left h1 {
-    font-size: 24px;
-  }
-  .image-box > img {
-    width: 95%;
-    height: 200px;
-  }
-
-  .about_us {
-    padding: 40px 16px;
-  }
-  .img-collection {
-    height: 250px;
-  }
-  .img-top {
-    width: 120px;
-    height: 180px;
-  }
-  .img-btm {
-    width: 65%;
-    height: 210px;
-  }
-  .aboutus_info h1 {
-    font-size: 22px;
-  }
-
-  .our_mission {
-    padding: 40px 16px;
-  }
-  .ourmission_info h1 {
-    font-size: 22px;
-  }
-  .grid_right {
-    grid-template-columns: 1fr;
-  } /* single column on tiny phones */
-
-  .heal_yourself {
-    padding: 30px 16px;
-  }
-  .healimg > img {
-    height: 220px;
-  }
-
-  .green-bg {
-    padding: 24px 16px 20px;
-  }
-  .cards {
-    padding: 16px 16px 24px;
-  }
-  .blog_title strong {
-    font-size: 22px;
-  }
-
-  .faq {
-    padding: 30px 16px;
-  }
-  .faq_info {
-    padding: 20px 16px;
-  }
-  .faq_info h2 {
-    font-size: 20px;
-  }
-
-  .article {
-    padding: 40px 16px;
-  }
-  .article_title strong {
-    font-size: 22px;
-  }
-
-  .testimonial {
-    padding: 40px 16px;
-  }
-  .testimonial_title strong {
-    font-size: 22px;
-  }
-
-  .contact {
-    padding: 40px 16px;
-  }
-  .contact_section h1 {
-    font-size: 22px;
-  }
-
-  .footer_info {
-    font-size: 11px;
   }
 }
